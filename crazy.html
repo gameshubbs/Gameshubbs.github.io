@@ -1,0 +1,64 @@
+<style>
+  body {
+  background-color: #333333;
+}
+  .button {
+  font: bold 50px Arial;
+  text-decoration: none;
+  background-color: #ff00c8;
+  color: #333333;
+  padding: 20px 30px 20px 30px;
+  border-top: 5px solid #CCCCCC;
+  border-right: 5px solid #333333;
+  border-bottom: 5px solid #333333;
+  border-left: 5px solid #CCCCCC;
+}
+
+.button:hover {
+  font: bold 50px Arial;
+  text-decoration: none;
+  background-color: #ff008c;
+  color: #333333;
+  padding: 20px 30px 20px 30px;
+  border-top: 5px solid #CCCCCC;
+  border-right: 5px solid #333333;
+  border-bottom: 5px solid #333333;
+  border-left: 5px solid #CCCCCC;
+}
+
+.fullScreen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+</style>
+<script>
+  function R() {
+    location.reload();
+  }
+
+  function F() {
+    document.getElementsByTagName("iframe")[0].className = "fullScreen";
+  }
+
+  function E() {
+    window.location.href = "https://focus.pcsb.org/focus/Modules.php?modname=misc%2FPortal.php";
+  }
+  
+  function CE() {
+    let route = prompt("Enter link. To go to link, click the normal escape button")
+    document.getElementById("escape").href = route;
+  }
+</script>
+<iframe src="https://boxing2.github.io/b4/crazy-cars/" width=" 1900" height="950" scrolling="yes"></iframe>
+<br>
+<br>
+<br>
+<a class="button" href="https://gameshubs.github.io/">Back</a>
+<a id="escape" class="button" href="https://focus.pcsb.org/focus/Modules.php?modname=misc%2FPortal.php">Escape</a>
+<button class="button" onclick="E()">Escape(better)</button>
+<button class="button" onclick="CE()">Custom Escape</button>
+<button class="button" onclick="R()">Reload</button>
+<!-- https://23azostore.github.io/s9/rocket-pult/ -->
