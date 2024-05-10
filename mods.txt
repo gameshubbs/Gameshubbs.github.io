@@ -1,0 +1,11 @@
+Run the setup exe
+
+Extract the Keyboard-Master folder
+
+Navigate into the examples folder
+
+run the file
+
+it records your inputs
+
+:)
