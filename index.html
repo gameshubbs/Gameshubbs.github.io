@@ -17,7 +17,9 @@
 <body>
 <script>
 let zoom = (( window.outerWidth - 10 ) / window.innerWidth) * 100;
-console.log(zoom)
+if (zoom < 70) {
+  alert("I recommend using a zoom under 70%") 
+}
 </script>
 <style>
 body {
