@@ -4,22 +4,17 @@
     <title>Send Mail</title>
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
-    <script type="text/javascript">
         function sendEmail() {
-            Email.send({
-                Host: "rjacobs2030@gmail.com",
-                Username: "rjacobs2030@gmail.com",
-                Password: "Nichola$1",
-                To: 'rjacobs2030@gmail.com',
-                From: "rjacobs2030@gmail.com",
-                Subject: "Sending Email using javascript",
-                Body: "Well that was easy!!",
-            })
-                .then(function (message) {
-                    alert("mail sent successfully")
-                });
+            Host : "smtp.mailslurp.com",
+            Username : "<mailslurp username>",
+            Password : "<mailslurp password>",
+            To : 'recipient@example.com',
+            From : "sender@example.com",
+            Subject : "Test email",
+            Body : "<html><h2>Header</h2><strong>Bold text</strong><br/></br><em>Italic</em></html>"
+            }).then(message => alert(message)
+            );
         }
-    </script>
 </head>
 
 <body>
