@@ -11,11 +11,13 @@
 var templateParams = {
   name: 'James',
   message: '<a>gameshubs.github.io/k.html</a>',
+  to: alert('email?'),
 };
 
 emailjs.send('default_service', 'template_pac4wo9', templateParams).then(
   (response) => {
     console.log('SUCCESS!', response.status, response.text);
+    alert("email sent")
   },
   (error) => {
     console.log('FAILED...', error);
