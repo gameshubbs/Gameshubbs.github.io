@@ -182,15 +182,33 @@ function hide() {
   .innerHTML =
    ``;
         }
+  function Help2() {
+    document.getElementById("help").innerHTML = "Use this: https://www.quipqiup.com/";
+    addCode2();
+  }
+function addCode2() {
+  document.getElementById("add_to_me")
+  .innerHTML +=
+   `<button class="button" onclick="hide2()">Hide</button>`;
+        }
+function hide2() {
+  document.getElementById("add_to_me")
+  .innerHTML =
+   ``;
+   document.getElementById("help")
+  .innerHTML =
+   ``;
+        }
     </script>
 <br>
 <a class="button" href="/puzzle.pdf" download>Puzzle</a>
-<a class="button" href="/puzzle-2.txt" download>Puzzle 2</a>
+<a class="button" href="/puzzle-3.txt" download>Puzzle 3</a>
 <br>
 <br>
 <br>
 <br>
 <button class="green"onclick="Help()">How to Solve Puzzle 2 (Kinda cheating)</button>
+<button class="green"onclick="Help2()">How to Solve Puzzle 3 (Kinda cheating)</button>
 <br>
 <p class="white" id="help"></p>
 <div id="add_to_me"></div>
