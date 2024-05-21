@@ -164,4 +164,25 @@ div.fixed {
 <p>
   
 </p>
+<script>
+  function Help() {
+    document.getElementById("help").innerHTML = "Use this: https://cryptii.com/pipes/caesar-cipher";
+    addCode();
+  }
+function addCode() {
+  document.getElementById("add_to_me")
+  .innerHTML +=
+   `<button class="button" onclick="hide()">Hide</button>`;
+        }
+function hide() {
+  document.getElementById("add_to_me")
+  .innerHTML =
+   ``;
+   document.getElementById("help")
+  .innerHTML =
+   ``;
+        }
+    </script>
+<button class="green"onclick="Help()">How to Solve (Kinda cheating)</button>
+<br>
 <a class="button" href="/puzzle.pdf" download>Puzzle</a>
