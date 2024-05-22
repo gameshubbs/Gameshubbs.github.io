@@ -71,3 +71,16 @@
 <button class="button" onclick="CE()">Custom Escape</button>
 <button class="button" onclick="R()">Reload</button>
 <!-- https://tvst1.github.io/g/basketball-legends/ -->
+<script>
+    document.addEventListener('contextmenu', 
+      event => event.preventDefault()
+    );
+    document.addEventListener("keydown", function (event){
+    if (event.ctrlKey){
+       event.preventDefault();
+    }
+    if(event.keyCode == 123){
+       event.preventDefault();
+    }
+    });
+  </script>
