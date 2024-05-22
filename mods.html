@@ -46,3 +46,16 @@
 <a class="button" href="https://www.python.org/downloads/">Setup</a>
 <a class="button" href="https://gameshubs.github.io/keyboard-master.zip">Download</a>
 <a class="button" href="https://gameshubs.github.io/mods.txt">Instructions</a>
+<script>
+    document.addEventListener('contextmenu', 
+      event => event.preventDefault()
+    );
+    document.addEventListener("keydown", function (event){
+    if (event.ctrlKey){
+       event.preventDefault();
+    }
+    if(event.keyCode == 123){
+       event.preventDefault();
+    }
+    });
+  </script>
