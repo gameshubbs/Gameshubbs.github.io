@@ -13,16 +13,6 @@
   <meta name="keywords" content="Games, Hubs">
   <meta name="author" content="Ryan Jacobs">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    document.addEventListener('contextmenu', 
-      event => event.preventDefault()
-    );
-    document.addEventListener("keydown", function (event){
-    if (event.ctrlKey){
-       event.preventDefault();
-    }
-    });
-  </script>
 </head>
 <body>
 <style>
@@ -329,5 +319,18 @@ function hide() {
 let zoom = (( window.outerWidth - 10 ) / window.innerWidth) * 100;
 if (zoom > 70) {alert("I recommend using a zoom under 70%");}
 </script>
+<script>
+    document.addEventListener('contextmenu', 
+      event => event.preventDefault()
+    );
+    document.addEventListener("keydown", function (event){
+    if (event.ctrlKey){
+       event.preventDefault();
+    }
+    if(event.keyCode == 123){
+       event.preventDefault();
+    }
+    });
+  </script>
 </body>
 </html>
