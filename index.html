@@ -17,6 +17,7 @@
 <body>
 <style>
 
+
 body {
   background-color: #333333;
 }
@@ -179,10 +180,11 @@ div.fixed {
   margin: auto;
   width: 80%;
   border: 5px solid #ff00c8;
-  padding: 40px;
-  text-align: center;
+  padding: 10px;
   height: 100px;
   vertical-align: top;
+  text-align: right;
+  top: 100;
 }
 
 
@@ -195,7 +197,9 @@ div.fixed {
   color: #333333;
   position: relative;
   display: inline-block;
-  vertical-align: top;
+  bottom: 0;
+  text-align: right;
+
 }
 
 .btn:active {
@@ -206,25 +210,33 @@ div.fixed {
 
 
 .green {
-
+  text-align: right;
   background-color: #ff00c8;
   box-shadow: 3px 5px 5px #888888;
   border-radius: 2px;
   transition: all 0.6s ease;
+  bottom: 0;
 }
 
 .green:hover {
   background-color: #ff008c;
-/*  Making button bigger on hover  */
-  transform: scale(0.1) perspective(10px)
- font-size: 1px;
+  border-radius: 6px;
+  padding: 18px 66px;
+  font-size: 26.4px;
+  text-decoration: none;
+  margin: 24px;
+  color: #333333;
+  position: relative;
+  display: inline-block;
+  bottom: 0;
 }
 
 img {
   float: left;
-  width: 55px;
-  height: 55px;
+  width: 100px;
+  height: 100px;
 }
+
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEWMMLDCE0"></script>
